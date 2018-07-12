@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Spooncular API</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <a href="index.html">main</a>
+    <form>
+      <div>
+        <label for="mashape-key">API Key</label>
+        <input type="text" name="query" id="mashape-key">
+      </div>
+      <div>
+        <label for="query">Query</label>
+        <input type="text" name="query" id="query">
+      </div>
+      <input type="submit" value="Search Recipes" id="search-recipes">
+    </form>
+
+    <div id="result"></div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <!-- <script src='https://s3.amazonaws.com/rapidapi-prod-fe_static/rapidapi.min.js'></script> -->
+  <script src="assets/javascript/spoonacular.js"></script>
+</body>
+</html>
+
+
