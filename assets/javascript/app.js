@@ -1,3 +1,27 @@
+debugger;
+
+$(document).on('click', '#get-location', getLocation );
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        $('#demo').text( 'Geolocation is not supported by this browser.' );
+    }
+}
+
+function showPosition(position) {
+  $('#demo').text("Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude);
+}
+
+
+
+
+
+
+
+
 // unirest.get("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/convert?ingredientName=flour&sourceUnit=cups&targetUnit=grams&sourceAmount=2.5")
 // .header("X-Mashape-Key", "")
 // .header("X-Mashape-Host", "spoonacular-recipe-food-nutrition-v1.p.mashape.com")
